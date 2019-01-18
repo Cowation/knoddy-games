@@ -93,11 +93,10 @@ body {
 }
 
 .column-item-one {
-    width: 40%;
+    width: 85vw;
     height: 325px;
     margin-left: 100px;
-    margin-right: 50px;
-    float: left
+    margin-right: 100px;
 }
 
 .column-item-two {
