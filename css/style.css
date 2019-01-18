@@ -1,0 +1,360 @@
+html,
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+.logo {
+    font-family: "Montserrat", sans-serif;
+    font-weight: bolder;
+    text-shadow: 0px 2px 24px rgb(160, 160, 160);
+    color: #bc79ff;
+    font-size: 22px;
+    text-decoration: none;
+    float: left;
+}
+
+.logo-container {
+    margin-left: 20px;
+    padding-top: 12.5px;
+    float: left;
+}
+
+.topbar {
+    background: rgba(255, 255, 255, 0.95);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+}
+
+.main {
+    margin-top: 0px;
+    height: 700px;
+    width: 100%;
+    background-color: #F0F2F3;
+}
+
+.top-text {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    text-align: center;
+    width: 100%;
+    font-size: 35px;
+    padding-top: 170px;
+}
+
+.flat-button {
+    background-color: #bc79ff;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    border-radius: 10px;
+    width: 275px;
+    height: 65px;
+    font-size: 25px;
+    font-weight: 600;
+    display: block;
+    margin: 0 auto;
+    margin-top: 50px;
+    border: none;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    outline: 0;
+}
+
+.flat-button:hover {
+    box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.35);
+    background-color: #cc98ff;
+    width: 320px;
+}
+
+.first-section {
+    height: 800px;
+    background-color: #F0F2F3;
+    margin: -10px;
+}
+
+.second-section {
+    height: 750px;
+    background-color: white;
+}
+
+.overview-text {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    font-size: 22.5px;
+    text-align: left;
+    line-height: 40px;
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-top: 100px;
+}
+
+.column-item-one {
+    width: 40%;
+    height: 325px;
+    margin-left: 100px;
+    margin-right: 50px;
+    float: left
+}
+
+.column-item-two {
+    width: 50%;
+    height: 325px;
+    margin-left: 45%;
+    margin-right: 25px;
+    margin-top: 38px
+}
+
+.column-title {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 30px;
+}
+
+.column-description {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 30px;
+    color: #868686;
+}
+
+.flash-object {
+    width: "720px";
+    height: "520px";
+    vertical-align: middle;
+}
+
+.game-name {
+    font-family: "Montserrat", sans-serif;
+    font-size: 70px;
+    color: white;
+    vertical-align: middle;
+    padding-top: 90px;
+    text-shadow: 0px 6px 24px rgba(0, 0, 0, 0.25)
+}
+
+.game-platform {
+    font-family: "Montserrat", sans-serif;
+    font-size: 35px;
+    color: #00b1ff;
+    margin-top: -30px;
+    text-shadow: 0px 0px 36px rgba(6, 149, 255, 0.51)
+}
+
+.platform-title {
+    color: #00b1ff;
+    font-family: "Montserrat", sans-serif;
+    font-size: 40px;
+    text-shadow: 0px 0px 36px rgba(6, 149, 255, 0.51);
+    padding-top: 125px;
+    padding-left: 40px;
+}
+
+.browse-title {
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-size: 70px;
+    padding-left: 40px;
+    margin-top: -30px;
+}
+
+.img-icon {
+    display: block;
+    width: 210px;
+    height: auto;
+    cursor: pointer;
+    margin-left: 5%;
+    margin-top: 30px;
+}
+
+.img-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #008CBA;
+    opacity: 0;
+    overflow: hidden;
+    width: 210px;
+    height: 0;
+    transition: .5s ease;
+    cursor: pointer;
+    margin-left: 5%;
+}
+
+.img-container {
+    margin: 0 auto;
+}
+
+.img-container:hover .img-overlay {
+    height: 35%;
+    opacity: 0.85;
+}
+
+.img-text {
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 200px;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.resolution-change {
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: white;
+    background-color: #bc79ff;
+    margin-top: 80px;
+    border: none;
+    height: 75px;
+    width: 250px;
+    border-radius: 10px;
+    transition-duration: 0.4s;
+    -webkit-transition-duration: 0.4s;
+    cursor: pointer;
+    outline: 0;
+}
+
+.resolution-change:hover {
+    box-shadow: 0px 6px 24px rgba(0, 0, 0, 0.5);
+}
+
+.download-file {
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: white;
+    background-color: #8b49cc;
+    border: none;
+    height: 65px;
+    width: 270px;
+    margin-top: 50px;
+    border-radius: 10px;
+    transition-duration: 0.4s;
+    -webkit-transition-duration: 0.4s;
+    cursor: pointer;
+    outline: 0;
+    z-index: 2;
+    position: relative;
+}
+
+.download-file:hover {
+    box-shadow: 0px 6px 24px rgba(0, 0, 0, 0.2);
+    margin-top: 40px;
+}
+.btn-with-text {
+    text-align: justify;
+    width: 270px;
+}
+
+.btn-with-text button {
+    display: block;
+    margin: 0 auto;
+}
+
+.download-file-caption {
+    font-family: "Montserrat", sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    margin-top: -20px;
+    z-index: 1;
+    position: relative;
+    transition-duration: 0.4s;
+    -webkit-transition-duration: 0.4s;
+}
+
+.menu-item-word {
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    font-weight: 800;
+    color: #727272;
+    text-decoration: none;
+}
+
+.header {
+    height: 40px;
+}
+nav {
+    float: right;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0 30px;
+    padding-top: 18px;
+    
+    position: relative;
+}
+
+nav a {
+    color: #727272;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+}
+
+nav a:hover {
+    color: #000;
+}
+
+nav a::before {
+    content: "";
+    display: block;
+    height: 5px;
+    width: 100%;
+    background-color: #000;
+    
+    position: absolute;
+    top: 0;
+    width: 0;
+    opacity: 0;
+    
+    transition: all ease-in-out 0.3s;
+}
+
+nav a:hover::before {
+    width: 100%;
+    opacity: 100;
+}
+
+.emulator-img-icon {
+    display: block;
+    width: 210px;
+    height: auto;
+    cursor: pointer;
+    margin-left: 5%;
+    margin-top: 30px;
+    transition-duration: 0.4s;
+    -webkit-transition-duration: 0.4s;
+}
+
+.emulator-img-icon:hover {
+    -webkit-filter: drop-shadow(0px 6px 24px #00a7ff);
+}
+
+.emulator-platform-header {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700; 
+    font-size: 20px;
+    padding-top: 40px;
+    padding-left: 40px;
+}

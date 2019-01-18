@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Knoddy Games</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        var resolution = "4:3"
+        
+        function setDownloadFile() {
+            var downloadForm = document.getElementById("download-form");
+            var flashObject = document.getElementById("game-object");
+            var downloadCaption = document.getElementById("download-file-caption");
+            
+            downloadForm.action = flashObject.data;
+            
+            var fileName = flashObject.data.substring(
+                flashObject.data.lastIndexOf("/") + 1, 
+                flashObject.data.lastIndexOf(".swf")
+            ) + ".swf";
+            
+            downloadCaption.innerHTML = '<span><img src="imgs/flashLogo.png" alt="Flash Logo" width="14px"></span> ' + fileName;
+        }
+        
+        function switchResolution() {
+            if (resolution === "4:3") {
+                resolution = "16:9";
+                document.getElementById("resolution-change").innerHTML = "Switch to 4:3";
+                document.getElementById("resolution-change").style.width = "142px";
+                document.getElementById("game-object").style.width = "900px";
+            } else {
+                resolution = "4:3";
+                document.getElementById("resolution-change").innerHTML = "Switch to 16:9";
+                document.getElementById("resolution-change").style.width = "250px";
+                document.getElementById("game-object").style.width = "620px";
+            }
+        }
+        
+        function showCaption() {
+            var fileCaption = document.getElementById("download-file-caption");
+            fileCaption.style.marginTop = "5px";
+        }
+        
+        function hideCaption() {
+            var fileCaption = document.getElementById("download-file-caption");
+            fileCaption.style.marginTop = "-20px";
+        }
+    </script>
+</head>
+    
+<script>
+    $(function() {
+        $("#header").load("header.html");
+    });
+</script>    
+
+<div id="header"></div>
+
+<body onload="setDownloadFile()">
+    <div style="width: 100%; height: 300px; background-color: #523b6a; text-align: center; box-shadow: 0px 6px 24px rgba(0, 0, 0, 0.5); margin-top: -30px">
+        <h1 class="game-name">Territory War Online</h1>
+        <h2 class="game-platform">FLASH</h2>
+    </div>
+    <div style="text-align: center; align-items: center; margin-top: 40px"><object data="flashgames/territorywaronline.swf" id="game-object" width="620px" height="520px" style="vertical-align: middle; box-shadow: 0px 10px 24px rgba(0, 0, 0, 0.25); transition-duration: 0.4s;"></object>
+    </div>
+    <div style="width: 100%; height: 50px"></div>
+    <div style="text-align: center; background-color: #F0F2F3">
+        <button type="button" id="resolution-change" class="resolution-change" onclick="switchResolution()">Switch to 16:9</button>
+    </div>
+    <div style="text-align: center; background-color: #F0F2F3; height: 200px;">
+        <form method="get" id="download-form">
+            <button type="submit" class="download-file" onmouseover="showCaption()" onmouseout="hideCaption()"><span><img src="imgs/downloadIcon.png" alt="Download Icon" width="30px" style="vertical-align: middle"></span> Download Game File</button>
+        </form>
+        <h1 class="download-file-caption" id="download-file-caption">
+            <span><img src="imgs/flashLogo.png" alt="Flash Logo" width="12px"></span>
+            name.swf
+        </h1>
+    </div>
+</body>
+</html>
